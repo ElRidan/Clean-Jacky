@@ -291,7 +291,6 @@ footer{
     align-items: end;
     background-color: black;
     height: auto;
-    margin: -1px;
 }
 .footer-info{
     display: flex;
@@ -459,6 +458,7 @@ footer{
 @media (max-width: 702px) {
     #hero{
         height: 800px;
+        padding: 0;
     }
     .hero-desc {
         width: 300px;
