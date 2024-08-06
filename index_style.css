@@ -25,6 +25,12 @@
     --secondary-color: #E74C3C;
     --alt-secondary-color:#D62C1A;
     --alt-primary-color:#3E5771;
+   
+    /* --bg-color: #ECF0F1;
+    --primary-color: #2C3E50;
+    --secondary-color: #E74C3C;
+    --alt-secondary-color:#D62C1A;
+    --alt-primary-color:#3E5771; */
 
 }
 
@@ -62,7 +68,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 0rem;
     margin-bottom: 2rem;
 }
 
@@ -73,6 +79,10 @@ body{
 .navbar-logo img{
     width: 300px;
     object-fit: fill;
+}
+
+.navbar-links a:hover{
+    color: var(--alt-secondary-color);  
 }
 
 .navbar-links{
@@ -377,13 +387,14 @@ footer{
         transform: translateY(0);
         filter: blur(0);
         opacity: 1;
+        overflow-y: hidden;
     }
 }
 .slider .list .item.active p:nth-child(1),
 .slider .list .item.active h2,
 .slider .list .item.active p:nth-child(3){
     transform: translateY(30px);
-    filter: blur(20px);
+    filter: blur(10px);
     opacity: 0;
     animation: showContent .5s .7s ease-in-out 1 forwards;
 }
